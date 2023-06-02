@@ -1,11 +1,12 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let domainName = () => {
+  let article = ['the', 'three', 'last', 'even' ];
+  let adj = ['wonderful', 'cool', 'grand', 'great', 'amazing'];
+  let noun = ['gamers', 'women', 'cats', 'knights', 'mages'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  let articleIndex = Math.floor(Math.random() * article.length);
+  let adjIndex = Math.floor(Math.random() * adj.length);
+  let nounIndex = Math.floor(Math.random() * noun.length);
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  return article[articleIndex] + adj[adjIndex] + noun[nounIndex] + '.com';
+
 };
